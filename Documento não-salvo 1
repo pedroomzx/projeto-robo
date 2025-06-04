@@ -1,0 +1,22 @@
+class RoboPatrulheiro:
+    def __init__(self, nome, area_de_patrulha):
+        self.nome = nome
+        self.area_de_patrulha = area_de_patrulha
+
+    def patrulhar(self):
+        print(f"{self.nome} está patrulhando a área: {self.area_de_patrulha}")
+
+    def transmitir_informacoes(self, informacao):
+        print(f"{self.nome} transmite a seguinte informação: {informacao}")
+
+# Criando instâncias do robô
+cidade_bot = RoboPatrulheiro("CidadeBot", "Centro Urbano")
+campo_bot = RoboPatrulheiro("CampoBot", "Área Rural")
+
+# Simulando patrulha e transmissão de informações
+cidade_bot.patrulhar()
+cidade_bot.transmitir_informacoes("Tudo seguro na cidade!")
+
+campo_bot.patrulhar()
+campo_bot.transmitir_informacoes("Monitorando atividades no campo.")
+
